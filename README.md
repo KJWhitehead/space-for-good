@@ -22,7 +22,26 @@ Run entirely by volunteers for volunteers, Space for Good is a coworking space f
 
 <h2>Features</h2>
 
+<h3>Header & Footer</h3>
+
+The header features the Space for Good logo.  On larger screens, the header also provides the nav bar options.  Smaller screens have a drop-down menu.  The footer provides social media links and, on larger screens, the contact details.
+<h3>Register</h3>
+<h3>Log in</h3>
+<h3>Log out</h3>
+<h3>Booking a facility</h3>
+
 <h2>Wireframes</h2>
+Landing page:
+<img src="./images/landing_page.png">
+
+Our Mission:
+<img src="./images/our_mission.png">
+
+Facilities:
+<img src="./images/facilities.png">
+
+Account:
+<img src="./images/account.png">
 
 <h2>Responsiveness</h2>
 
