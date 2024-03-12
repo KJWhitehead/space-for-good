@@ -26,11 +26,34 @@ Run entirely by volunteers for volunteers, Space for Good is a coworking space f
 
 The header features the Space for Good logo.  On larger screens, the header also provides the nav bar options.  Smaller screens have a drop-down menu.  The footer provides social media links and, on larger screens, the contact details.
 <h3>Register</h3>
+
+Required information:
+<ul>
+<li>First name</li>
+<li>Last name</li>
+<li>Email address</li>
+<li>Unique user name</li>
+<li>Password</li></ul>
+
+
 <h3>Log in</h3>
 <h3>Log out</h3>
 <h3>Booking a facility</h3>
 
+There are four possible locations: 
+<ol>
+<li>SPACE 1: Enclosed meeting room for 12 people</li>
+<li>SPACE 2: Enclosed meeting room for 6 people</li>
+<li>SPACE 3: Enclosed meeting room for 6 people</li>
+<li>25 desk spots</li>
+</ol>
+
 <h2>Wireframes</h2>
+
+Database map (Please help - not sure here!):
+<img src="./images/database_map.png">
+
+
 Landing page:
 <img src="./images/landing_page.png">
 
