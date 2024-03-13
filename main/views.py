@@ -7,5 +7,6 @@ from .models import Reservation
 # Create your views here.
 class SpaceList(generic.ListView):
     queryset = Space.objects.all()
-    template_name = "post_list.html"
+    template_name = "main/index.html"
+    paginate_by = 6
 
