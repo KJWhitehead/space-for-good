@@ -1,8 +1,11 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.views import generic
+from .models import Space
+from .models import Reservation
 
 
 # Create your views here.
+class SpaceList(generic.ListView):
+    queryset = Space.objects.all()
+    template_name = "post_list.html"
 
-def my_main(request):
-    return HttpResponse("Hello, Blog!")
