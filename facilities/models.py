@@ -40,7 +40,7 @@ class Reservation(models.Model):
     )
 
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="main.Reservation.user+")
-    space = models.ForeignKey(Space, on_delete=models.CASCADE)
+    space = models.ForeignKey(Space, on_delete=models.CASCADE, related_name="main.Reservation.space+")
     date = models.DateField(null=False, blank=False)
     time = models.CharField(choices=TIMES, max_length=20, null=False, blank=False)
 

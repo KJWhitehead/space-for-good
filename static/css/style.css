@@ -6,3 +6,11 @@ body {
 .dark-bg {
     background-color: #31708E;
 }
+
+.btn:hover {
+    background-color: #8fc1e3
+}
+
+.btn {
+    background-color: #31708E;
+}

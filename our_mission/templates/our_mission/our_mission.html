@@ -3,8 +3,9 @@
 {% load static %}
 <div class="container mt-5">
     <div class="row">
-        <div class="col-4 text-center">
-            IMAGE HERE?
+        <div class="col-4 container">
+            <img src="{% static 'images/typing_hands.jpg' %}" alt="Image of two hands typing at a laptop"
+                class="img-fluid">
         </div>
         <div class="col-8">
             <!-- Title goes between these h2 tags -->
@@ -13,11 +14,6 @@
             {{ our_mission.content | safe }}
         </div>
     </div>
-    <div class="row">
-        <div class="col text-right">
-            <!-- Updated on field goes in here -->
 
-        </div>
-    </div>
 </div>
 {% endblock content %}

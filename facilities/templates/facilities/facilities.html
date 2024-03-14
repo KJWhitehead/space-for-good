@@ -5,8 +5,9 @@
 
 <div class="container mt-5">
     <div class="row">
-        <div class="col-4 text-center">
-            Image?
+        <div class="col-4 container">
+            <img src="{% static 'images/meeting_room.jpg' %}"
+                alt="Picture of an empty room with a table and desks around it." class="img-fluid">
         </div>
         <div class="col-8">
             <!-- Title goes between these h2 tags -->
@@ -15,22 +16,19 @@
             {{ facilities.content | safe }}
             <div class="card-body">
                 {% if user.is_authenticated %}
-                <h3>Book a space here</h3>
+                <h3>Book one of our spaces here</h3>
 
                 <form id="reservationForm" method="post" style="margin-top: 1.3em;">
                     {{ reservation_form | crispy }}
                     {% csrf_token %}
-                    <button id="submitButton" type="submit" class="btn btn-signup btn-lg dark-bg">Submit</button>
+                    <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
                 </form>
                 {% else %}
                 <p>Log in to leave a comment</p>
                 {% endif %}
             </div>
         </div>
-        <!-- Creating New Comments -->
-        <div class="col-md-4 card mb-4 mt-3">
 
-        </div>
     </div>
 
 </div>
