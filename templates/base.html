@@ -1,5 +1,7 @@
 {% load static %}
-
+{% url 'home' as home_url %}
+{% url 'our_mission' as our_mission_url %}
+{% url 'facilities' as facilities_url %}
 
 
 
@@ -24,6 +26,8 @@
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 
+    <link rel="icon" type="image/png" href="{% static 'favicon.png' %}">
+
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">
@@ -35,14 +39,22 @@
                     width="15%"></span>
 
             <div id="navbarText">
-                <ul>
-                    <li class="text-white">
-                        Home
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == home_url %}active{% endif %}" aria-current="page"
+                            href="{% url 'home' %}">Home</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == about_url %}active{% endif %}" aria-current="page"
+                            href="{% url 'our_mission' %}">Our Mission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == about_url %}active{% endif %}" aria-current="page"
+                            href="{% url 'facilities' %}">Facilities</a>
+                    </li>
                 </ul>
-                <span class="text-white">
-                    By volunteers for volunteers
+                <span class="navbar-text text-muted">
+                    By volunteers, for volunteers
                 </span>
             </div>
         </div>
