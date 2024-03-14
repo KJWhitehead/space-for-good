@@ -1,4 +1,7 @@
 {% load static %}
+{% url 'account_login' as login_url %}
+{% url 'account_signup' as signup_url %}
+{% url 'account_logout' as logout_url %}
 {% url 'home' as home_url %}
 {% url 'our_mission' as our_mission_url %}
 {% url 'facilities' as facilities_url %}
@@ -33,27 +36,46 @@
 <body class="d-flex flex-column h-100 main-bg">
 
     <!-- Navigation -->
-    <nav class="dark-bg">
+    <nav class="navbar navbar-expand-lg navbar-light dark-bg">
         <div class="container-fluid">
-            <span class="text-white"><img src="{% static '/images/space_for_good_logo.png' %}" alt="Space for Good logo"
-                    width="15%"></span>
 
-            <div id="navbarText">
+            <span class="brand"><img src="{% static '/images/space_for_good_logo.png' %}"
+                    alt="Space for Good logo"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == home_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'home' %}">Home</a>
+                        <a class="nav-link {% if request.path == home_url %}active{% endif %} text-white"
+                            aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == about_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'our_mission' %}">Our Mission</a>
+                        <a class="nav-link {% if request.path == about_url %}active{% endif %} text-white"
+                            aria-current="page" href="{% url 'our_mission' %}">Our Mission</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == about_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'facilities' %}">Facilities</a>
+                        <a class="nav-link {% if request.path == about_url %}active{% endif %} text-white"
+                            aria-current="page" href="{% url 'facilities' %}">Facilities</a>
                     </li>
+                    {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == logout_url %}active{% endif %} text-white"
+                            aria-current="page" href="{% url 'account_logout' %}">Logout</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == signup_url %}active{% endif %} text-white"
+                            aria-current="page" href="{% url 'account_signup' %}">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == login_url %}active{% endif %} text-white"
+                            aria-current="page" href="{% url 'account_login' %}">Login</a>
+                    </li>
+                    {% endif %}
                 </ul>
-                <span class="navbar-text text-muted">
+                <span class="navbar-text text-white">
                     By volunteers, for volunteers
                 </span>
             </div>
