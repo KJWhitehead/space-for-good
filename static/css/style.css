@@ -1,6 +1,5 @@
 body {
     background-color: #fff;
-    font: black;
 }
 
 .dark-bg {
@@ -8,9 +7,26 @@ body {
 }
 
 .btn:hover {
-    background-color: #8fc1e3
+    background-color: #8fc1e3;
 }
 
 .btn {
     background-color: #31708E;
+    color: #fff;
+}
+
+.social {
+    color: #fff;
+}
+
+.social:hover {
+    color: #8fc1e3;
+}
+
+.active {
+    font-weight: 700;
+}
+
+.nav-item {
+    font-size: large;
 }
