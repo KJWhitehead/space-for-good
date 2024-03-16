@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+
+<h2>My Bookings</h2>
+<ul>
+    {% for booking in user_bookings %}
+    <li>{{ booking.space }} - {{ booking.date }} - {{ booking.time }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock content %}

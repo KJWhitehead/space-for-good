@@ -56,5 +56,8 @@ class Reservation(models.Model):
         choices=TIMES, max_length=20, null=False, blank=False
     )
 
+    def user_can_delete(self, user):
+        return user == self.user
+
     def __str__(self):
-        return f"Reservation for {self.user.username} at {self.space} on {self.date} {self.time}"
+        return self.user.username

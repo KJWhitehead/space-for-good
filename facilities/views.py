@@ -6,6 +6,7 @@ from django.core.exceptions import ValidationError
 from django.http import HttpResponseRedirect
 from .models import Facilities, Space
 from .forms import ReservationForm
+from .models import Reservation
 
 
 def facilities_info(request):
@@ -37,3 +38,11 @@ def facilities_info(request):
         "reservation_form": reservation_form,
     }
     return render(request, template, context)
+
+def view_bookings(request):
+    # Retrieve bookings associated with the current user
+    user_bookings = Reservation.objects.filter(user=request.user)
+    context = {
+        'user_bookings': user_bookings
+    }
+    return render(request, 'facilities/bookings.html', context)

@@ -14,6 +14,8 @@
             <h2>{{ facilities.title }}</h2>
             <!-- Content goes directly underneath this -->
             {{ facilities.content | safe }}
+
+            <a href="{% url 'view_bookings' %}">My Bookings</a>
             <div class="card-body">
                 {% if user.is_authenticated %}
                 <h3>Book one of our spaces here</h3>
