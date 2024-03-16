@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.core.validators import MinValueValidator, MaxValueValidator
+import datetime
 
 
 class Facilities(models.Model):
@@ -56,4 +57,4 @@ class Reservation(models.Model):
     )
 
     def __str__(self):
-        return self.user.username
+        return f"Reservation for {self.user.username} at {self.space} on {self.date} {self.time}"
