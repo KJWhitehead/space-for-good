@@ -8,7 +8,15 @@
 <h2>My Bookings</h2>
 <ul>
     {% for booking in user_bookings %}
-    <li>{{ booking.space }} - {{ booking.date }} - {{ booking.time }}</li>
+    <li>
+        <div class="d-flex align-items-start bg-body-tertiary mb-3">
+            <div class="col-2">{{ booking.date }}</div>
+            <div class="col-2">{{ booking.time }} </div>
+            <div class="col-2">{{ booking.space }}</div>
+            <div class="col"><button class="edit-btn btn">Edit</button><button class="delete-btn btn">Delete</button>
+            </div>
+        </div>
+    </li>
     {% endfor %}
 </ul>
 

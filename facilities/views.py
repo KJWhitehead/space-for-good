@@ -46,3 +46,5 @@ def view_bookings(request):
         'user_bookings': user_bookings
     }
     return render(request, 'facilities/bookings.html', context)
+
+    
