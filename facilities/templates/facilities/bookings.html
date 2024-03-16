@@ -9,15 +9,17 @@
 <ul>
     {% for booking in user_bookings %}
     <li>
-        <div class="d-flex align-items-start bg-body-tertiary mb-3">
+        <div class="d-flex align-items-start bg-body-tertiary mb-3" id="booking{{ booking.id }}">
             <div class="col-2">{{ booking.date }}</div>
             <div class="col-2">{{ booking.time }} </div>
             <div class="col-2">{{ booking.space }}</div>
-            <div class="col"><button class="edit-btn btn">Edit</button><button class="delete-btn btn">Delete</button>
+            <div class="col"><button class="edit-btn btn" data-booking_id="{{ booking.id }}">Edit</button><button
+                    class="delete-btn btn" data-booking="{{ booking.id }}">Delete</button>
             </div>
         </div>
     </li>
     {% endfor %}
 </ul>
-
+{% block extras %}
+<script src="{% static 'js/bookings.js' %}"></script>
 {% endblock content %}

@@ -48,3 +48,18 @@ def view_bookings(request):
     return render(request, 'facilities/bookings.html', context)
 
     
+def delete_booking(request, booking_id):
+    # Retrieve the booking object based on the booking ID
+    booking = get_object_or_404(Reservation, id=booking_id)
+    
+    # Verify user authorization (optional)
+    if booking.user != request.user:
+        messages.error(request, 'You are not authorized to delete this booking.')
+        return redirect('facilities/bookings_list')  # Redirect to bookings list or another appropriate page
+
+    # Handle DELETE request
+    if request.method == 'DELETE':
+        # Delete the booking object from the database
+        booking.delete()
+        # Optional: Provide feedback to the user
+        messages.success(request, 'Booking deleted successfully.')
