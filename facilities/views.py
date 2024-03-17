@@ -1,12 +1,14 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.views import generic
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, JsonResponse
 from .models import Facilities, Space
 from .forms import ReservationForm
 from .models import Reservation
+
+
 
 
 def facilities_info(request):
@@ -25,7 +27,7 @@ def facilities_info(request):
                 reservation.save()
                 messages.success(
                     request,
-                    'Reservation submitted and awaiting approval.'
+                    'Reservation submitted. We look forward to see you!'
                 )
             except ValidationError as e:
                 messages.error(request, str(e))
@@ -55,11 +57,13 @@ def delete_booking(request, booking_id):
     # Verify user authorization (optional)
     if booking.user != request.user:
         messages.error(request, 'You are not authorized to delete this booking.')
-        return redirect('facilities/bookings_list')  # Redirect to bookings list or another appropriate page
+        return redirect('facilities:bookings_list')  # Redirect to bookings list or another appropriate page
 
-    # Handle DELETE request
-    if request.method == 'DELETE':
-        # Delete the booking object from the database
-        booking.delete()
-        # Optional: Provide feedback to the user
-        messages.success(request, 'Booking deleted successfully.')
+    # Delete the booking object from the database
+    booking.delete()
+    # Optional: Provide feedback to the user
+    messages.success(request, 'Booking deleted successfully.')
+    return JsonResponse({'message': 'Booking deleted successfully'})  # Return JSON response for successful deletion
+
+    # Handle other HTTP methods
+    return JsonResponse({'error': 'Method not allowed'}, status=405)  # Return JSON response for method not allowed
