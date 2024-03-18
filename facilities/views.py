@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.views import generic
 from django.contrib import messages
 from django.contrib.auth.models import User
@@ -29,7 +29,7 @@ def facilities_info(request):
                 reservation.save()
                 messages.success(
                     request,
-                    'Reservation submitted. We look forward to see you!'
+                    'Reservation submitted. We look forward to seeing you!'
                 )
             except ValidationError as e:
                 messages.error(request, str(e))
@@ -45,7 +45,7 @@ def facilities_info(request):
 
 def view_bookings(request):
     # Retrieve bookings associated with the current user
-    user_bookings = Reservation.objects.filter(user=request.user)
+    user_bookings = Reservation.objects.filter(user=request.user).order_by('date', 'time')
     context = {
         'user_bookings': user_bookings
     }

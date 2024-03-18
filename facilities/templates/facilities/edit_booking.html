@@ -3,8 +3,7 @@
 {% load static %}
 {% load crispy_forms_tags %}
 
-<a href="{% url 'facilities' %}">Back to Facilities Main Page</a>
-<a href="{% url 'view_bookings' %}">See My Current Bookings</a>
+
 
 <div class="container mt-5">
     <div class="row">
@@ -13,7 +12,7 @@
                 alt="Picture of an empty room with a table and desks around it." class="img-fluid">
         </div>
         <div class="col-8">
-            <h2>Edit Booking</h2>
+            <h3>Edit Booking</h3>
             <div>
                 You are making changes to this booking:
                 <div class="d-flex align-items-start bg-body-tertiary mb-3" id="booking{{ booking.id }}">
@@ -32,6 +31,15 @@
             {% else %}
             <p>Log in to edit this booking.</p>
             {% endif %}
+            <div class="col button-container">
+                <div class="button-wrapper">
+                    <a href="{% url 'facilities' %}" class="btn">Back to Facilities Main Page</a>
+                </div>
+                <div class="button-wrapper">
+                    <a href="{% url 'view_bookings' %}" class="btn">See My Current Bookings</a>
+                </div>
+            </div>
         </div>
+
 
         {% endblock %}

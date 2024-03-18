@@ -10,15 +10,20 @@
                 alt="Picture of an empty room with a table and desks around it." class="img-fluid">
         </div>
         <div class="col-8">
-            <!-- Title goes between these h2 tags -->
-            <h2>{{ facilities.title }}</h2>
-            <!-- Content goes directly underneath this -->
+
+            <h3>{{ facilities.title }}</h3>
+
             {{ facilities.content | safe }}
 
-            <a href="{% url 'view_bookings' %}">See My Current Bookings</a>
+            <div class="col button-container">
+                <div class="button-wrapper">
+                    <a href="{% url 'view_bookings' %}" class="btn">See My Current Bookings</a>
+                </div>
+            </div>
+
             <div class="card-body">
                 {% if user.is_authenticated %}
-                <h3>Book one of our spaces here</h3>
+                <h4>Book one of our spaces here</h4>
 
                 <form id="reservationForm" method="post" style="margin-top: 1.3em;">
                     {{ reservation_form | crispy }}

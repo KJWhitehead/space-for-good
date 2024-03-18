@@ -1,5 +1,5 @@
 body {
-    background-color: #fff;
+    background-color: #F7F9FB;
 }
 
 .dark-bg {
@@ -12,8 +12,9 @@ body {
 
 .btn {
     background-color: #31708E;
-    color: #fff;
+    color: #F7F9FB;
 }
+
 
 .button-container {
     display: flex;
@@ -38,4 +39,9 @@ body {
 
 .nav-item {
     font-size: large;
+}
+
+.alert {
+    color: darkred;
+    text-align: center;
 }

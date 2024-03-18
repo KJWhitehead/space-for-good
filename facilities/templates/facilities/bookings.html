@@ -3,7 +3,6 @@
 {% load static %}
 {% load crispy_forms_tags %}
 
-<a href="{% url 'facilities' %}">Back to Facilities Main Page</a>
 
 <div class="container mt-5">
     <div class="row">
@@ -12,7 +11,7 @@
                 alt="Picture of an empty room with a table and desks around it." class="img-fluid">
         </div>
         <div class="col-8">
-            <h2>My Bookings</h2>
+            <h3>My Bookings</h3>
             <ul>
                 {% for booking in user_bookings %}
                 <li>
@@ -25,17 +24,27 @@
                                 <a href="{% url 'edit_booking' booking.id %}" class="edit-btn btn">Edit</a>
                             </div>
                             <div class="button-wrapper">
-                                <button class="delete-btn btn" data-booking="{{ booking.id }}">Delete</button>
+                                <button class="btn delete-btn" data-booking="{{ booking.id }}">Delete</button>
                             </div>
                         </div>
                     </div>
                 </li>
                 {% endfor %}
+
             </ul>
+            <div class="col button-container">
+                <div class="button-wrapper">
+                    <a href="{% url 'facilities' %}" class="btn">Back to Facilities Main Page</a>
+                </div>
+            </div>
         </div>
 
     </div>
 </div>
+
+<!-- delete modal-->
+
+
 {% block extras %}
 <script src="{% static 'js/bookings.js' %}"></script>
 {% endblock extras %}
