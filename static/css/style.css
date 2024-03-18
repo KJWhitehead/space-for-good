@@ -13,6 +13,7 @@ body {
 .btn {
     background-color: #31708E;
     color: #fff;
+    padding: 5px;
 }
 
 .social {
