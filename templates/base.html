@@ -54,7 +54,7 @@
                             aria-current="page" href="{% url 'our_mission' %}">Our Mission</a>
                     </li>
                     <li class="nav-item">
-                        <a class="text-white nav-link {% if request.path == facilities_url %}active{% endif %}"
+                        <a class="text-white nav-link {% if request.path == facilities_url or request.path == bookings_url %}active{% endif %}"
                             aria-current="page" href="{% url 'facilities' %}">Facilities</a>
                     </li>
                     {% if user.is_authenticated %}

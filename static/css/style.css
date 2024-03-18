@@ -13,6 +13,14 @@ body {
 .btn {
     background-color: #31708E;
     color: #fff;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+.button-wrapper {
     padding: 5px;
 }
 

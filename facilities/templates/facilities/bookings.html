@@ -20,9 +20,13 @@
                         <div class="col-2">{{ booking.date }}</div>
                         <div class="col-2">{{ booking.time }} </div>
                         <div class="col-2">{{ booking.space }}</div>
-                        <div class="col"><a href="{% url 'edit_booking' booking.id %}"
-                                class="edit-btn btn">Edit</a><button class="delete-btn btn"
-                                data-booking="{{ booking.id }}">Delete</button>
+                        <div class="col button-container">
+                            <div class="button-wrapper">
+                                <a href="{% url 'edit_booking' booking.id %}" class="edit-btn btn">Edit</a>
+                            </div>
+                            <div class="button-wrapper">
+                                <button class="delete-btn btn" data-booking="{{ booking.id }}">Delete</button>
+                            </div>
                         </div>
                     </div>
                 </li>
