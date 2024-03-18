@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+{% load crispy_forms_tags %}
+<h2>Edit Booking</h2>
+<div>
+    You are making changes to this booking:
+    <div class="d-flex align-items-start bg-body-tertiary mb-3" id="booking{{ booking.id }}">
+        <div class="col-2">{{ booking.date }}</div>
+        <div class="col-2">{{ booking.time }}</div>
+        <div class="col-2">{{ booking.space }}</div>
+    </div>
+</div>
+{% if user.is_authenticated %}
+<p>Reservation under: {{ user.username }}</p>
+<form id="editReservationForm" method="post" style="margin-top: 1.3em;">
+    {% csrf_token %}
+    {{ edit_reservation_form | crispy }}
+    <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
+</form>
+{% else %}
+<p>Log in to edit this booking.</p>
+{% endif %}
+
+{% endblock %}

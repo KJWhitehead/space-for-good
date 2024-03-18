@@ -5,8 +5,10 @@ from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
 from django.http import HttpResponseRedirect, JsonResponse
 from .models import Facilities, Space
-from .forms import ReservationForm
+from .forms import ReservationForm, EditReservationForm
 from .models import Reservation
+from django.views.decorators.csrf import csrf_exempt
+
 
 
 
@@ -48,6 +50,25 @@ def view_bookings(request):
         'user_bookings': user_bookings
     }
     return render(request, 'facilities/bookings.html', context)
+
+
+@csrf_exempt
+def edit_booking(request, booking_id):
+    booking = get_object_or_404(Reservation, id=booking_id)
+    if request.method == 'POST':
+        form = EditReservationForm(request.POST, instance=booking)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Booking updated successfully.')
+            return redirect('view_bookings')
+    else:
+        form = EditReservationForm(instance=booking)
+
+    context = {
+        'booking': booking,
+        'form': form,
+    }
+    return render(request, 'facilities/edit_booking.html', context)
 
     
 def delete_booking(request, booking_id):
