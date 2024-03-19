@@ -12,9 +12,26 @@
             <h2>{{ our_mission.title }}</h2>
             <!-- Content goes directly underneath this -->
             {{ our_mission.content | safe }}
-
+            <div id="map" class="w-50 my-3"></div>
         </div>
     </div>
-
 </div>
 {% endblock content %}
+
+{% block js %}
+<script>
+    let mapTileLayers = L.tileLayer(
+        "http://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}", {
+            attribution: "Powered by <a href='https://developers.arcgis.com/terms/attribution/' target='_blank' rel='noopener'>Esri</a>"
+        });
+
+    let map = L.map("map", {
+        layers: [mapTileLayers],
+        center: [52.08053, -4.656311],
+        zoom: 15
+    });
+
+    let myMarker = L.marker([52.08053, -4.656311]).addTo(map);
+</script>
+
+{% endblock %}

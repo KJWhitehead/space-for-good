@@ -45,3 +45,8 @@ body {
     color: darkred;
     text-align: center;
 }
+
+#map {
+    height: 300px;
+
+}

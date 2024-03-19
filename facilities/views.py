@@ -1,18 +1,15 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.views import generic
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
-from django.http import HttpResponseRedirect, JsonResponse
 from .models import Facilities, Space
 from .forms import ReservationForm, EditReservationForm
 from .models import Reservation
-from django.views.decorators.csrf import csrf_exempt
 
 
-
-
-
+@login_required
 def facilities_info(request):
     """
     Renders Facilities page
@@ -31,6 +28,7 @@ def facilities_info(request):
                     request,
                     'Reservation submitted. We look forward to seeing you!'
                 )
+                return redirect('view_bookings') 
             except ValidationError as e:
                 messages.error(request, str(e))
         else:
@@ -43,6 +41,8 @@ def facilities_info(request):
     }
     return render(request, template, context)
 
+
+@login_required
 def view_bookings(request):
     # Retrieve bookings associated with the current user
     user_bookings = Reservation.objects.filter(user=request.user).order_by('date', 'time')
@@ -52,9 +52,15 @@ def view_bookings(request):
     return render(request, 'facilities/bookings.html', context)
 
 
-@csrf_exempt
+@login_required
 def edit_booking(request, booking_id):
+    # Retrieve the booking object based on the booking ID
     booking = get_object_or_404(Reservation, id=booking_id)
+    # Verify user authorization
+    if booking.user != request.user:
+        messages.error(request, 'You are not authorized to edit this booking.')
+        return redirect('view_bookings')
+
     if request.method == 'POST':
         form = EditReservationForm(request.POST, instance=booking)
         if form.is_valid():
@@ -70,7 +76,8 @@ def edit_booking(request, booking_id):
     }
     return render(request, 'facilities/edit_booking.html', context)
 
-    
+
+@login_required    
 def delete_booking(request, booking_id):
     # Retrieve the booking object based on the booking ID
     booking = get_object_or_404(Reservation, id=booking_id)
@@ -78,13 +85,10 @@ def delete_booking(request, booking_id):
     # Verify user authorization (optional)
     if booking.user != request.user:
         messages.error(request, 'You are not authorized to delete this booking.')
-        return redirect('facilities:bookings_list')  # Redirect to bookings list or another appropriate page
+        return redirect('view_bookings')  # Redirect to bookings list or another appropriate page
 
     # Delete the booking object from the database
     booking.delete()
     # Optional: Provide feedback to the user
     messages.success(request, 'Booking deleted successfully.')
-    return JsonResponse({'message': 'Booking deleted successfully'})  # Return JSON response for successful deletion
-
-    # Handle other HTTP methods
-    return JsonResponse({'error': 'Method not allowed'}, status=405)  # Return JSON response for method not allowed
+    return redirect('view_bookings')  # Redirect to bookings list or another appropriate page
