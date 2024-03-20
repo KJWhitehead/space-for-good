@@ -6,340 +6,237 @@
 
 Run entirely by volunteers for volunteers, Space for Good is a coworking space for charities and those who want to make the world a better place by providing their time to help others without monetary gain. Space for Good offers a variety of coworking environments that can be booked by registered users.
 
+🛑🛑
 Consider adding a mockup image using the "Am I Responsive" website.
 Here's your deployed site as an example:
 https://ui.dev/amiresponsive?url=https://spaceforgood-264af18d8428.herokuapp.com
-
-Screenshots for the README and testing should not be inside of `assets/` or `static/` image folders.
-(reminder: `assets/` and `static/` are for files used on the live site, not documentation)
-Consider adding a new folder called `documentation`, and add the amiresponsive screenshot inside of that folder.
-To add the image into your README, use this format:
-(assuming you have a new folder called `documentation` with an image called "mockup.png")
-
-![screenshot](documentation/mockup.png)
-
-Note: Markdown files (.md) should not contain HTML elements like `img`, `br`, `div`, `a`, etc, only Markdown formatting.
-Find out more about using Markdown elements here:
-https://pandao.github.io/editor.md/en.html
-
----
-
-GitHub now supports CALLOUTS in Markdown files.
-There are some callouts already embedded in this application for you.
-However, if you feel that you want to add more, there are certain ones you can use.
-
-NOTE: the preview for callouts isn't yet supported in Gitpod/Codeanywhere/VSCode/etc.
-You'll have to commit/push the changes to GitHub to see it in action.
-
-> [!NOTE]  
-> BLUE: Highlights information that users should take into account, even when skimming.
-
-> [!TIP]  
-> GREEN: Optional information to help a user be more successful.
-
-> [!IMPORTANT]  
-> PURPLE: Crucial information necessary for users to succeed.
-
-> [!WARNING]  
-> YELLOW: Critical content demanding immediate user attention due to potential risks.
-
-> [!CAUTION]  
-> RED: Negative potential consequences of an action.
-
-Source: https://github.com/orgs/community/discussions/16925
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+🛑🛑 I would but it looks bad in the phone view. 
 
 ## UX
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
+In designing this project, I wanted to create a website with full CRUD functionality that also served a useful purpose.  While this place is entirely fictional, I believe Space for Good would fulfill a valuable niche in the broader community if it existed, providing volunteers and charities the opportunity to use a coworking space for free amongst like-minded individuals.  
 
-In this section, you will briefly explain your design processes.
+### Landing Page
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+I decided on a landing page with a photo of a space with a relaxed, earthy vibe in contrast to a high-stress, competitive, Silicon Valley tone to emphasize the volunteer and community focus. The navigation bar allows the user to go between the different pages easily and infoms the user which page they are on.
+
+### Our Mission Page
+
+As this is a more niche coworking space, a description of the community has been given here.
+
+### Facilities Pages
+
+Because these individuals and groups may need space for individuals or teams, a variety of spaces are available for booking in two-hour segments during the day.
 
 ### Colour Scheme
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
+A calming series of blues was chosen for the header, footer, and buttons, while an off-white was chosen for the background.
 
-Explain your colours and the colour scheme.
+- `#31708E` for header, footer, and buttons.
+- `#8fc1e3` used for hover functions.
+- `#F7F9FB` for the background and social media icons.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+- `#000000` used for text.
+- `#8B0000` used for highlights.
 
-- `#000000` used for primary text.
-- `#E84610` used for primary highlights.
-- `#4A4A4F` used for secondary text.
-- `#009FE3` used for secondary highlights.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
-
-Consider adding a link and screenshot for your colour scheme using "coolors".
-https://coolors.co/generate
-
-When you add a colour to the palette, the URL is dynamically updated, making it easier for you to return back to your colour palette later if needed.
-
-Example:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-I used [coolors.co](https://coolors.co/e84610-009fe3-4a4a4f-445261-d63649-e6ecf0-000000) to generate my colour palette.
+I used [coolors.co](https://coolors.co/31708e-8fc1e3-f7f9fb) to generate my colour palette.
 
 ![screenshot](documentation/coolors.png)
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
-
-⚠️ ONLY IF YOU ACTUALLY ADDED `:root` variables in CSS! ⚠️
-If you've used CSS `:root` variables, consider also including a code snippet here!
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-I've used CSS `:root` variables to easily update the global colour scheme by changing only one value, instead of everywhere in the CSS file.
-
-```css
-:root {
-    /* P = Primary | S = Secondary */
-    --p-text: #000000;
-    --p-highlight: #E84610;
-    --s-text: #4A4A4F;
-    --s-highlight: #009FE3;
-    --white: #FFFFFF;
-    --black: #000000;
-}
-```
-
 ### Typography
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
-
-Explain any fonts and icon libraries used, like Google Fonts and/or Font Awesome.
-
-Consider adding a link to each font used, and the Font Awesome site if used (or similar icon library).
-
-Example:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 - [Montserrat](https://fonts.google.com/specimen/Montserrat) was used for the primary headers and titles.
 
-- [Lato](https://fonts.google.com/specimen/Lato) was used for all other secondary text.
+- [Roboto](https://fonts.google.com/specimen/Roboto) was used for all other secondary text.
 
 - [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
 
 ## User Stories
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-In this section, list all of your user stories for the project.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 ### New Site Users
 
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
+- As a new site user, I would like to view the NavBar on every page, so that I can quickly navigate the site.
+- As a new site user, I would like to register an account, so that I can make bookings.
+- As a new site user, I would like to to know when I can use the workspaces, so that I can volunteer in the evenings and weekends.
+- As a new site user, I would like to see what is available in coworking space, so that I can make an informed decision before signing up.
+- As a new site user, I would like to to know the rules of the space (like if guests are permitted), so that I can decide whether to register.
 
 ### Returning Site Users
 
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
+- As a returning site user, I would like to know the location and nearby amenities of the coworking space, so that I can know where to go and what I can eat there.
+- As a returning site user, I would like to easily book a workspace for a specific date and time through an intuitive online platform, so that I can plan my work schedule efficiently.
+- As a returning site user, I would like contact information, so that I can reach out to the coworking space with specific demands.
+- As a returning site user, I would like to see a calendar of upcoming networking events, workshops, and professional development opportunities hosted by the coworking space, so that I can stay engaged and connected with other charities.
+- As a returning site user, I would like to see a member directory, so that I can connect with others.
 
 ### Site Admin
 
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
+- As a site administrator, I should be able to use recognizable branding, so that our brand is clear to users.
+- As a site administrator, I want users to be able to log in and out with notifications, so that they are aware of their status.
+- As a site administrator, I should be able to advertise how to volunteer as workers at Space for Good, so that I can maintain the free community space.
 
 ## Wireframes
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-In this section, display your wireframe screenshots using a Markdown `table`.
-Instructions on how to do Markdown `tables` start on line #213 on this site: https://pandao.github.io/editor.md/en.html
-
-Alternatively, dropdowns are a way to condense several wireframes into a collapsible menu to save space.
-Dropdowns in Markdown are considered some of the only acceptable HTML components that are allowed for assessment purposes.
-
-⚠️ **IMPORTANT**! ⚠️ **IMPORTANT**! ⚠️ **IMPORTANT**! ⚠️
-The example below uses the `details` and `summary` code elements.
-However, for these scripts to work, I've had to add spaces within the `< >` elements.
-
-You MUST remove these spaces for it to work properly on your own README/TESTING files.
-Remove the spaces within the `< >` brackets for the `details` and `summary` code elements,
-for the Mobile, Tablet, and Desktop wireframes.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 This is so ugly but I don't know how to clean it up.
 
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
 
 ### Mobile Wireframes
 
-< details >
-< summary > Click here to see the Mobile Wireframes < / summary >
+<details>
+<summary> Click here to see the Mobile Wireframes </summary>
 
 Home
   - ![screenshot](documentation/wireframes/mobile-home.png)
 
-About
-  - ![screenshot](documentation/wireframes/mobile-about.png)
+Our Mission
+  - ![screenshot](documentation/wireframes/mobile-our-mission.png)
 
-Contact
-  - ![screenshot](documentation/wireframes/mobile-contact.png)
+Facilities
+  - ![screenshot](documentation/wireframes/mobile-facilities.png)
 
-Gallery
-  - ![screenshot](documentation/wireframes/mobile-gallery.png)
+Sign Up
+  - ![screenshot](documentation/wireframes/mobile-sign-up.png)
 
-etc.
-  - repeat for any remaining mobile wireframes
-
-< / details >
+</details>
 
 ### Tablet Wireframes
 
-< details >
-< summary > Click here to see the Tablet Wireframes < / summary >
+<details>
+<summary> Click here to see the Tablet Wireframes </summary>
 
 Home
   - ![screenshot](documentation/wireframes/tablet-home.png)
 
-About
-  - ![screenshot](documentation/wireframes/tablet-about.png)
+Our Mission
+  - ![screenshot](documentation/wireframes/tablet-our-mission.png)
 
-Contact
-  - ![screenshot](documentation/wireframes/tablet-contact.png)
+Facilities
+  - ![screenshot](documentation/wireframes/tablet-facilities.png)
 
-Gallery
-  - ![screenshot](documentation/wireframes/tablet-gallery.png)
+Sign Up
+  - ![screenshot](documentation/wireframes/tablet-sign-up.png)
 
-etc.
-  - repeat for any remaining tablet wireframes
-
-< / details >
+</details>
 
 ### Desktop Wireframes
 
-< details >
-< summary > Click here to see the Desktop Wireframes < / summary >
+<details>
+<summary> Click here to see the Desktop Wireframes </summary>
 
 Home
   - ![screenshot](documentation/wireframes/desktop-home.png)
 
-About
-  - ![screenshot](documentation/wireframes/desktop-about.png)
+Our Mission
+  - ![screenshot](documentation/wireframes/desktop-our-mission.png)
 
-Contact
-  - ![screenshot](documentation/wireframes/desktop-contact.png)
+Facilities
+  - ![screenshot](documentation/wireframes/desktop-facilities.png)
 
-Gallery
-  - ![screenshot](documentation/wireframes/desktop-gallery.png)
+Sign Up
+  - ![screenshot](documentation/wireframes/desktop-sign-up.png)
 
-etc.
-  - repeat for any remaining desktop wireframes
-
-< / details >
+</details>
 
 ## Features
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-In this section, you should go over the different parts of your project,
-and describe each in a sentence or so.
-
-You will need to explain what value each of the features provides for the user,
-focusing on who this website is for, what it is that they want to achieve,
-and how your project is the best way to help them achieve these things.
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-IMPORTANT: Remember to always include a screenshot of each individual feature!
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 ### Existing Features
 
-- **{{ YOUR-TITLE-FOR-FEATURE-#1 }}**
+- **{{ HEADER AND NAVIGATION }}**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Site branding on left for brand recognition
+    - Nav bar provides links to pages and indicates current page for ease of use
+    - Visible on all pages
 
 ![screenshot](documentation/features/feature01.png)
 
-- **{{ YOUR-TITLE-FOR-FEATURE-#2 }}**
+- **{{ FOOTER }}**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Address and phone number of Space for Good for contacting
+    - Social media links for additional information about the space
+    - Visible on all pages
 
 ![screenshot](documentation/features/feature02.png)
 
-- **{{ YOUR-TITLE-FOR-FEATURE-#3 }}**
+- **{{ HOME SCREEN }}**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Provides a visual representation of the spaces offered for the potential client
 
 ![screenshot](documentation/features/feature03.png)
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
+- **{{ OUR MISSION PAGE }}**
+    - Provides a brief description of the mission of Space for Good
+    - Provides a brief description of the spaces available
+    - Provides a map with the location of the organization
 
-Repeat as necessary for as many features as your site contains.
+![screenshot](documentation/features/feature04.png)
 
-Hint: the more, the merrier!
+- **{{ CREATE AN ACCOUNT }}**
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+    - Users must create an account to view Facilities
+    - This offers a secure way to manage bookings at Space for Good
+
+![screenshot](documentation/features/feature05.png)
+
+- **{{ LOG IN }}**
+
+    - Users may sign in to their individual account
+    - Confirmation of success is displayed at top
+
+![screenshot](documentation/features/feature06.png)
+
+- **{{ FACILITIES PAGE }}**
+
+    - Once logged in, detailed information about the facilities is available
+    - Users may also view their existing bookings from a link here
+
+![screenshot](documentation/features/feature07.png)
+
+- **{{ CREATE A BOOKING }}**
+
+    - Drop-downs of spaces, dates, and times allows the user ease of choices
+
+![screenshot](documentation/features/feature08.png)
+
+- **{{ SEE MY CURRENT BOOKINGS }}**
+
+    - Users may view their existing bookings
+
+![screenshot](documentation/features/feature09.png)
+
+- **{{ EDIT A BOOKING }}**
+
+    - Users may edit their existing bookings if needed
+
+![screenshot](documentation/features/feature10.png)
+
+- **{{ DELETE A BOOKING }}**
+
+    - Users may delete their existing bookings if needed
+
+![screenshot](documentation/features/feature11.png)
 
 ### Future Features
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-Do you have additional ideas that you'd like to include on your project in the future?
-Fantastic! List them here!
-It's always great to have plans for future improvements!
-Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-- {{ YOUR-TITLE-FOR-FUTURE-FEATURE-#1 }}
-    - Any additional notes about this feature.
-- {{ YOUR-TITLE-FOR-FUTURE-FEATURE-#2 }}
-    - Any additional notes about this feature.
-- {{ YOUR-TITLE-FOR-FUTURE-FEATURE-#3 }}
-    - Any additional notes about this feature.
+- {{ CALENDAR OF EVENTS }}
+    - A calendar to clearly show the scheduled events that the space will hold.
+- {{ VOLUNTEER FORM }}
+    - A form prospective volunteers can complete with availability and interests.
+- {{ SPECIAL INTEREST GROUP REGISTRATION }}
+    - The user registration will include special interest groups for better networking.
 
 ## Tools & Technologies Used
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-In this section, you should explain the various tools and technologies used to develop the project.
-Make sure to put a link (where applicable) to the source, and explain what each was used for.
-Some examples have been provided, but this is just a sample only, your project might've used others.
-Feel free to delete any unused items below as necessary.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-- ⚠️⚠️ REQUIRED <-- delete me ⚠️⚠️
 - [![Git](https://img.shields.io/badge/Git-grey?logo=git&logoColor=F05032)](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [![Git](https://img.shields.io/badge/GitHub-grey?logo=github&logoColor=181717)](https://github.com) used for secure online code storage.
-- ⚠️⚠️ CHOOSE ONLY ONE <-- delete me ⚠️⚠️
-- [![Gitpod](https://img.shields.io/badge/Gitpod-grey?logo=gitpod&logoColor=FFAE33)](https://gitpod.io) used as a cloud-based IDE for development.
-- [![Codeanywhere](https://img.shields.io/badge/Codeanywhere-grey?logo=ebox&logoColor=7F3F98)](https://codeanywhere.com) used as a cloud-based IDE for development.
-- [![VSCode](https://img.shields.io/badge/VSCode-grey?logo=visualstudiocode&logoColor=007ACC)](https://code.visualstudio.com) used as my local IDE for development.
-- ⚠️⚠️ CHOOSE ALL APPLICABLE <-- delete me ⚠️⚠️
+- [![Gitpod](https://img.shields.io/badge/Gitpod-grey?logo=gitpod&logoColor=FFAE33)](https://gitpod.io) used as a 
 - [![HTML](https://img.shields.io/badge/HTML-grey?logo=html5&logoColor=E34F26)](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [![CSS](https://img.shields.io/badge/CSS-grey?logo=css3&logoColor=1572B6)](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
 - [![JavaScript](https://img.shields.io/badge/JavaScript-grey?logo=javascript&logoColor=F7DF1E)](https://www.javascript.com) used for user interaction on the site.
-- [![jQuery](https://img.shields.io/badge/jQuery-grey?logo=jquery&logoColor=0769AD)](https://jquery.com) used for user interaction on the site.
 - [![Python](https://img.shields.io/badge/Python-grey?logo=python&logoColor=3776AB)](https://www.python.org) used as the back-end programming language.
-- ⚠️⚠️ CHOOSE ONLY ONE <-- delete me ⚠️⚠️
-- [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-grey?logo=githubpages&logoColor=222222)](https://pages.github.com) used for hosting the deployed front-end site.
 - [![Heroku](https://img.shields.io/badge/Heroku-grey?logo=heroku&logoColor=430098)](https://www.heroku.com) used for hosting the deployed back-end site.
-- ⚠️⚠️ CHOOSE ONLY ONE (if applicable) <-- delete me ⚠️⚠️
 - [![Bootstrap](https://img.shields.io/badge/Bootstrap-grey?logo=bootstrap&logoColor=7952B3)](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- [![Materialize](https://img.shields.io/badge/Materialize-grey?logo=materialdesign&logoColor=F5A5A8)](https://materializecss.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- ⚠️⚠️ CHOOSE ALL APPLICABLE <-- delete me ⚠️⚠️
 - [![Django](https://img.shields.io/badge/Django-grey?logo=django&logoColor=092E20)](https://www.djangoproject.com) used as the Python framework for the site.
 - [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-grey?logo=postgresql&logoColor=4169E1)](https://www.postgresql.org) used as the relational database management.
 - [![PostgreSQL by Code Institute](https://img.shields.io/badge/PostgreSQL_by_Code_Institute-grey?logo=okta&logoColor=F05223)](https://dbs.ci-dbs.net) used as the Postgres database from Code Institute.
@@ -348,48 +245,75 @@ Feel free to delete any unused items below as necessary.
 - [![Balsamiq](https://img.shields.io/badge/Balsamiq-grey?logo=barmenia&logoColor=CE0908)](https://balsamiq.com/wireframes) used for creating wireframes.
 - [![Canva](https://img.shields.io/badge/Canva-grey?logo=canva&logoColor=00C4CC)](https://www.canva.com/p/canvawireframes) used for creating wireframes.
 - [![Font Awesome](https://img.shields.io/badge/Font_Awesome-grey?logo=fontawesome&logoColor=528DD7)](https://fontawesome.com) used for the icons.
+🛑🛑🛑🛑Crispy Forms?
+🛑🛑🛑🛑SummerNote?
+🛑🛑🛑🛑That database builder?
+
 
 ## Database Design
 
 Entity Relationship Diagrams (ERD) help to visualize database architecture before creating models.
 Understanding the relationships between different tables can save time later in the project.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-Using your defined models (one example below), create an ERD with the relationships identified.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 ```python
-class Product(models.Model):
-    category = models.ForeignKey(
-        "Category", null=True, blank=True, on_delete=models.SET_NULL)
-    sku = models.CharField(max_length=254, null=True, blank=True)
-    name = models.CharField(max_length=254)
-    description = models.TextField()
-    has_sizes = models.BooleanField(default=False, null=True, blank=True)
-    price = models.DecimalField(max_digits=6, decimal_places=2)
-    rating = models.DecimalField(
-        max_digits=6, decimal_places=2, null=True, blank=True)
-    image_url = models.URLField(max_length=1024, null=True, blank=True)
-    image = models.ImageField(null=True, blank=True)
+class Facilities(models.Model):
+    title = models.CharField(max_length=200)
+    content = models.TextField()
+
+    def __str__(self):
+        return self.title
+
+
+class Space(models.Model):
+
+    TYPES = (
+        ("Meeting Room", "Meeting Room"),
+        ("Open Seating", "Open Seating"),
+    )
+
+    name = models.CharField(max_length=50, null=False, blank=False)
+    max_capacity = models.PositiveIntegerField(
+        default=1,
+        validators=[MinValueValidator(1), MaxValueValidator(12)],
+        null=False, blank=False
+    )
+    space_type = models.CharField(
+        choices=TYPES, max_length=20, null=False, blank=False
+    )
 
     def __str__(self):
         return self.name
+
+
+class Reservation(models.Model):
+
+    TIMES = (
+        ("09:00-11:00", "09:00-11:00"),
+        ("11:00-13:00", "11:00-13:00"),
+        ("13:00-15:00", "13:00-15:00"),
+        ("15:00-17:00", "15:00-17:00"),
+        ("17:00-19:00", "17:00-19:00"),
+    )
+
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE,
+        related_name="main.Reservation.user+"
+    )
+    space = models.ForeignKey(
+        Space, on_delete=models.CASCADE,
+        related_name="main.Reservation.space+"
+    )
+    date = models.DateField(null=False, blank=False)
+    time = models.CharField(
+        choices=TIMES, max_length=20, null=False, blank=False
+    )
+
+    def user_can_delete(self, user):
+        return user == self.user
+
+    def __str__(self):
+        return self.user.username
 ```
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-A couple recommendations for building free ERDs:
-- [Draw.io](https://draw.io)
-- [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
-
-A more comprehensive ERD can be auto-generated once you're
-at the end of your development stages, just before you submit.
-Follow the steps below to obtain a thorough ERD that you can include.
-Feel free to leave the steps in the README for future use to yourself.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 I have used `pygraphviz` and `django-extensions` to auto-generate an ERD.
 
@@ -424,14 +348,6 @@ It isn't a specialized tool, but with the right tags and project creation/issue 
 
 Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-Consider adding a basic screenshot of your Projects Board.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-![screenshot](documentation/gh-projects.png)
-
 ### GitHub Issues
 
 [GitHub Issues](https://github.com/KJWhitehead/space-for-good/issues) served as an another Agile tool.
@@ -439,19 +355,9 @@ There, I used my own **User Story Template** to manage user stories.
 
 It also helped with milestone iterations on a weekly basis.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-Consider adding a screenshot of your Open and Closed Issues.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 - [Open Issues](https://github.com/KJWhitehead/space-for-good/issues) [![GitHub issues](https://img.shields.io/github/issues/KJWhitehead/space-for-good)](https://github.com/KJWhitehead/space-for-good/issues)
 
-    ![screenshot](documentation/gh-issues-open.png)
-
 - [Closed Issues](https://github.com/KJWhitehead/space-for-good/issues?q=is%3Aissue+is%3Aclosed) [![GitHub closed issues](https://img.shields.io/github/issues-closed/KJWhitehead/space-for-good)](https://github.com/KJWhitehead/space-for-good/issues?q=is%3Aissue+is%3Aclosed)
-
-    ![screenshot](documentation/gh-issues-closed.png)
 
 ### MoSCoW Prioritization
 
@@ -469,16 +375,6 @@ Using this approach, I was able to apply the MoSCow prioritization and labels to
 > For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Deployment
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-**IMPORTANT:**
-
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 The live deployed application can be found deployed on [Heroku](https://spaceforgood-264af18d8428.herokuapp.com).
 
@@ -654,6 +550,7 @@ Use this space to discuss any differences between the local version you've devel
 ### Acknowledgements
 
 - I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his support and guidance throughout the development of this project.
+- I would like to thank my Code Institute facilitator, [Iris Smok](https://www.linkedin.com/in/irissmok/) for her clear desire to mould me into a coder.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) and particularly the WECA/Coleg Gwent group for the moral support; it kept me going during long periods of self doubt and imposter syndrome.
 - I would like to thank my partner for believing in me, and allowing me to make this transition into software development.

@@ -1,5 +1,11 @@
 body {
     background-color: #F7F9FB;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .dark-bg {
