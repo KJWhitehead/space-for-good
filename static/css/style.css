@@ -15,7 +15,6 @@ body {
     color: #F7F9FB;
 }
 
-
 .button-container {
     display: flex;
     align-items: center;
@@ -35,6 +34,10 @@ body {
 
 .active {
     font-weight: 700;
+}
+
+.navbar {
+    padding: 0;
 }
 
 .nav-item {

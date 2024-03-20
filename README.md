@@ -640,6 +640,8 @@ Use this space to discuss any differences between the local version you've devel
 | [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
 | [CodeInstitute LMS](https://learn.codeinstitute.net/dashboard) | entire site | HTML, CSS, JavaScript, Python, Django |
 | [LeafletJS](https://leafletjs.com/) | our mission page | API |
+| [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) | entire site | responsive HTML/CSS |
+| [StackOverflow](https://stackoverflow.com/) | entire site | HTML, CSS, JavaScript |
 
 ### Media
 
