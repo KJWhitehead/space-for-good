@@ -527,6 +527,8 @@ Use this space to discuss any differences between the local version you've devel
 
 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
+I'm very angry to discover that my button wrapper padding is gone in the deployed site.  I had no idea this was a thing until just now, Thursday, March 21st, at 10:08am.
+
 ## Credits
 
 ### Content

@@ -68,7 +68,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | facilities | bookings.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | facilities | edit_booking.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | facilities | facilities.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| main | index.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| main | index.html | ![screenshot](documentation/validation/index-to-screenshot.png) | |
 | our_mission | our_mission.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | templates | authenticate.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | templates | index.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
