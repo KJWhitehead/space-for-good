@@ -10,4 +10,3 @@ class FacilitiesAdmin(SummernoteModelAdmin):
 
 admin.site.register(Space)
 admin.site.register(Reservation)
-

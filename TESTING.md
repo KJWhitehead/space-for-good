@@ -3,49 +3,6 @@
 > [!NOTE]  
 > Return back to the [README.md](README.md) file.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-In this section, you need to convince the assessors that you have conducted enough testing to legitimately believe that the site works well.
-Essentially, in this part, you should go over all of your project's features, and ensure that they all work as intended,
-with the project providing an easy and straightforward way for the users to achieve their goals.
-
-Feature-by-Feature Testing:
-
-Go through each feature of your portfolio site and detail the testing process for each.
-
-Explain the functionality and demonstrate how it aligns with the intended purpose. This could include:
-
-- Navigation: Ensuring smooth transitions between pages, links directing to the correct destinations.
-- Responsive Design: Checking for compatibility across various devices and screen sizes.
-- Portfolio Display: Verifying that projects are properly showcased with accurate descriptions, images, and links.
-- Contact Form: Testing the form submission process, ensuring the user receives a confirmation, and you receive the message.
-
-User Experience Testing:
-
-- Usability Testing: Have users (or simulated users) interact with the site and provide feedback. Document any issues encountered and the resolutions implemented.
-- Accessibility Testing: Confirm compliance with accessibility standards (e.g., screen reader compatibility, proper alt text for images, keyboard navigation).
-
-Compatibility Testing:
-
-- Browser Compatibility: Testing on different browsers (Chrome, Firefox, Safari, Edge, etc.) to ensure consistent performance.
-- Device Compatibility: Ensuring functionality across various devices (desktops, laptops, tablets, and mobile phones).
-- Performance Testing (optional):
-	- Speed and Load Testing: Tools like PageSpeed Insights or GTmetrix to check page load times and optimize where necessary.
-	- Scalability Testing: Assess how the site handles increased traffic or usage.
-
-Regression Testing:
-
-After implementing fixes or updates, ensure that previous features and functionalities still work as intended. This prevents new changes from breaking existing features.
-
-Documentation and Logs:
-
-Maintain records of testing procedures, results, and any bugs encountered along with their resolutions. This helps demonstrate a systematic approach to testing and problem-solving.
-User Feedback Incorporation:
-
-If applicable, mention how user feedback has been taken into account and implemented to enhance the user experience.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 ## Code Validation
 
 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
@@ -55,7 +12,11 @@ You are not required to validate external libraries/frameworks, such as imported
 
 **IMPORTANT**: You must provide a screenshot for each file you validate.
 
+🛑🛑🛑🛑 WHat should be in the screenshot --- does the version of the validator at the bottom matter? 
+
 **PRO TIP**: Always validate the live site pages, not your local code. There could be subtle/hidden differences.
+
+🛑🛑🛑🛑 What about for the templates from AllAuth? I direct inputted the CSS because I got terrifying messages with the live site option.
 
 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
@@ -65,11 +26,16 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| facilities | bookings.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| facilities | edit_booking.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| facilities | facilities.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| main | index.html | ![screenshot](documentation/validation/index-to-screenshot.png) | |
-| our_mission | our_mission.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| facilities | bookings.html | ![screenshot](documentation/validation/bookings.png) | |
+| facilities | edit_booking.html | ![screenshot](documentation/validation/edit-booking.png) | |
+| facilities | facilities.html | ![screenshot](documentation/validation/facilities.png) | |
+| main | index.html | ![screenshot](documentation/validation/index.png) | |
+| our_mission | our_mission.html | ![screenshot](documentation/validation/our-mission.png) | |
+
+Are these just extra?
+
+| Directory | File | Screenshot | Notes |
+| --- | --- | --- | --- |
 | templates | authenticate.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | templates | index.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | templates | generate.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
@@ -91,7 +57,7 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| static | style.css | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| static | style.css | ![screenshot](documentation/validation/css.png) | |
 
 ### JavaScript
 
@@ -99,7 +65,7 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| static | bookings.js | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| static | bookings.js | ![screenshot](documentation/validation/javascript.png) | |
 
 ### Python
 

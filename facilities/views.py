@@ -28,7 +28,7 @@ def facilities_info(request):
                     request,
                     'Reservation submitted. We look forward to seeing you!'
                 )
-                return redirect('view_bookings') 
+                return redirect('view_bookings')
             except ValidationError as e:
                 messages.error(request, str(e))
         else:
@@ -45,7 +45,8 @@ def facilities_info(request):
 @login_required
 def view_bookings(request):
     # Retrieve bookings associated with the current user
-    user_bookings = Reservation.objects.filter(user=request.user).order_by('date', 'time')
+    user_bookings = Reservation.objects.filter(user=request.user).order_by
+    ('date', 'time')
     context = {
         'user_bookings': user_bookings
     }
@@ -77,19 +78,22 @@ def edit_booking(request, booking_id):
     return render(request, 'facilities/edit_booking.html', context)
 
 
-@login_required    
+@login_required
 def delete_booking(request, booking_id):
     # Retrieve the booking object based on the booking ID
     booking = get_object_or_404(Reservation, id=booking_id)
-    
-    # Verify user authorization 
+
+    # Verify user authorization
     if booking.user != request.user:
-        messages.error(request, 'You are not authorized to delete this booking.')
-        return redirect('view_bookings')  # Redirect to bookings list or another appropriate page
+        messages.error(request, 'You are not authorized to delete'
+                       'this booking.')
+        return redirect('view_bookings')  # Redirect to bookings list
+        # or another appropriate page
 
     # Delete the booking object from the database
     booking.delete()
-    
+
     # Provide feedback to the user
     messages.success(request, 'Booking deleted successfully.')
-    return redirect('view_bookings')  # Redirect to bookings list or another appropriate page
+    return redirect('view_bookings')  # Redirect to bookings list or
+    # another appropriate page
