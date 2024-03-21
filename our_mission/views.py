@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Our_Mission
 
+
 def our_mission_sfg(request):
     """
     Renders the Mission Statement page
