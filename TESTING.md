@@ -5,21 +5,6 @@
 
 ## Code Validation
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use the space to discuss code validation for any of your own code files (where applicable).
-You are not required to validate external libraries/frameworks, such as imported Bootstrap, Materialize, Font Awesome, etc.
-
-**IMPORTANT**: You must provide a screenshot for each file you validate.
-
-🛑🛑🛑🛑 WHat should be in the screenshot --- does the version of the validator at the bottom matter? 
-
-**PRO TIP**: Always validate the live site pages, not your local code. There could be subtle/hidden differences.
-
-🛑🛑🛑🛑 What about for the templates from AllAuth? I direct inputted the CSS because I got terrifying messages with the live site option.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 ### HTML
 
 I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
@@ -31,25 +16,6 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | facilities | facilities.html | ![screenshot](documentation/validation/facilities.png) | |
 | main | index.html | ![screenshot](documentation/validation/index.png) | |
 | our_mission | our_mission.html | ![screenshot](documentation/validation/our-mission.png) | |
-
-Are these just extra or are they for the AllAuth templates?
-
-| Directory | File | Screenshot | Notes |
-| --- | --- | --- | --- |
-| templates | authenticate.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | index.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | generate.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | index.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | activate_form.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | deactivate_form.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | login.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | authentication_error.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | connections.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | login.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | login_cancelled.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | signup.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | login_extra.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | provider_list.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 
 ### CSS
 
@@ -70,8 +36,6 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 ### Python
 
 I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
-
-🛑🛑🛑🛑apps.py and tests.py aren't in this.
 
 | Directory | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
@@ -141,8 +105,6 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | repeat for any other tested browsers | x | x | x | x | x |
 
 ## Lighthouse Audit
-
-🛑🛑🛑🛑Why do I get different values each time I test?
 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 

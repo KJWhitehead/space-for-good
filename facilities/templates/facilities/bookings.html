@@ -13,7 +13,7 @@
         <div class="col-md-8">
             <h3>My Bookings</h3>
             <ul>
-                {% for booking in user_bookings %}
+                {% for booking in user_bookings|dictsort:"time"|dictsort:"date" %}
                 <li>
                     <div class="d-flex align-items-start bg-body-tertiary mb-3" id="booking{{ booking.id }}">
                         <div class="col-2">{{ booking.date }}</div>

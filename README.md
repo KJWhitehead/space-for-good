@@ -513,7 +513,7 @@ Use this space to discuss any differences between the local version you've devel
 
 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
-I'm very angry to discover that my button wrapper padding is gone in the deployed site.  I had no idea this was a thing until just now, Thursday, March 21st, at 10:08am.
+No noticable differences.
 
 ## Credits
 
@@ -522,14 +522,21 @@ I'm very angry to discover that my button wrapper padding is gone in the deploye
 | Source | Location | Notes |
 | --- | --- | --- |
 | [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
-| [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
 | [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
-| [CodeInstitute LMS](https://learn.codeinstitute.net/dashboard) | entire site | HTML, CSS, JavaScript, Python, Django |
-| [LeafletJS](https://leafletjs.com/) | our mission page | API |
-| [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) | entire site | responsive HTML/CSS |
-| [StackOverflow](https://stackoverflow.com/) | entire site | HTML, CSS, JavaScript |
+| [CodeInstitute LMS](https://learn.codeinstitute.net/dashboard) | entire site | foundational understanding of code |
+| [LeafletJS](https://leafletjs.com/) | our mission page | open-source map API |
+| [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) | entire site | responsive HTML/CSS components|
+
+🛑🛑🛑 Specify links for StackOverflow
+
+| Source | Location | Notes |
+| --- | --- | --- |
+| [StackOverflow](https://stackoverflow.com/) | entire site | unstuck on x |
+| [ChatGPT](https://stackoverflow.com/) | entire site | debugging, troubleshooting and explaining code |
 
 ### Media
+
+🛑🛑🛑 Specify images
 
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
