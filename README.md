@@ -12,6 +12,8 @@ Here's your deployed site as an example:
 https://ui.dev/amiresponsive?url=https://spaceforgood-264af18d8428.herokuapp.com
 🛑🛑 I would but it looks bad in the phone view. 
 
+![screenshot](documentation/amiresponsive.png)
+
 ## UX
 
 In designing this project, I wanted to create a website with full CRUD functionality that also served a useful purpose.  While this place is entirely fictional, I believe Space for Good would fulfill a valuable niche in the broader community if it existed, providing volunteers and charities the opportunity to use a coworking space for free amongst like-minded individuals.  
@@ -543,7 +545,6 @@ Use this space to discuss any differences between the local version you've devel
 
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
-| 
 | [Unsplash](https://unsplash.com) | entire site | image | sample of fake spaces |
 | [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
 
