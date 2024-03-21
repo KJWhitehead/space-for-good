@@ -32,7 +32,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | main | index.html | ![screenshot](documentation/validation/index.png) | |
 | our_mission | our_mission.html | ![screenshot](documentation/validation/our-mission.png) | |
 
-Are these just extra?
+Are these just extra or are they for the AllAuth templates?
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
@@ -142,31 +142,17 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 ## Lighthouse Audit
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this space to discuss testing the live/deployed site's Lighthouse Audit reports.
-Avoid testing the local version (especially if developing in Gitpod), as this can have knock-on effects of performance.
-
-If you don't have Lighthouse in your Developer Tools,
-it can be added as an [extension](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk).
-
-Don't just test the home page (unless it's a single-page application).
-Make sure to test the Lighthouse Audit results for all of your pages.
-
-**IMPORTANT**: You must provide screenshots of the results, to "prove" that you've actually tested them.
-
-Sample Lighthouse testing documentation:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+🛑🛑🛑🛑Why do I get different values each time I test?
 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Some minor warnings |
-| About | ![screenshot](documentation/lighthouse/lighthouse-about-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-about-desktop.png) | Some minor warnings |
-| Gallery | ![screenshot](documentation/lighthouse/lighthouse-gallery-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-gallery-desktop.png) | Slow response time due to large images |
-| x | x | x | repeat for any other tested pages/sizes |
+| Home | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Poor performance in mobile due to large images |
+| Our Mission | ![screenshot](documentation/lighthouse/lighthouse-our-mission-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-our-mission-desktop.png) | Slow response time due to large images|
+| Facilities | ![screenshot](documentation/lighthouse/lighthouse-facilities-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-facilities-desktop.png) | Slow response time due to large images |
+| Bookings | ![screenshot](documentation/lighthouse/lighthouse-bookings-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-bookings-desktop.png) | Slow response time due to large images |
+| Edit Booking | ![screenshot](documentation/lighthouse/lighthouse-edit-booking-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-edit-booking-desktop.png) | Slow response time due to large images |
 
 ## Defensive Programming
 
