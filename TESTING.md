@@ -78,57 +78,31 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | facilities | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/KJWhitehead/space-for-good/main/facilities/admin.py) | ![screenshot](documentation/validation/facilities-admin.png) | |
 | facilities | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/KJWhitehead/space-for-good/main/facilities/forms.py) | ![screenshot](documentation/validation/facilities-forms.png) | |
 | facilities | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/KJWhitehead/space-for-good/main/facilities/models.py) | ![screenshot](documentation/validation/facilities-models.png) | |
-| facilities | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/KJWhitehead/space-for-good/main/facilities/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| facilities | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/KJWhitehead/space-for-good/main/facilities/urls.py) | ![screenshot](documentation/validation/facilities-urls.png) | |
 | facilities | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/KJWhitehead/space-for-good/main/facilities/views.py) | ![screenshot](documentation/validation/facilities-views.png) | |
 | main | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/KJWhitehead/space-for-good/main/main/admin.py) | ![screenshot](documentation/validation/main-admin.png) | |
 | main | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/KJWhitehead/space-for-good/main/main/models.py) | ![screenshot](documentation/validation/main-models.png) | |
 | main | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/KJWhitehead/space-for-good/main/main/urls.py) | ![screenshot](documentation/validation/main-urls.png) | |
 | main | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/KJWhitehead/space-for-good/main/main/views.py) | ![screenshot](documentation/validation/main-views.png) | |
-|  | manage.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/KJWhitehead/space-for-good/main/manage.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| our_mission | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/KJWhitehead/space-for-good/main/our_mission/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| our_mission | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/KJWhitehead/space-for-good/main/our_mission/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| our_mission | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/KJWhitehead/space-for-good/main/our_mission/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| our_mission | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/KJWhitehead/space-for-good/main/our_mission/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| space | settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/KJWhitehead/space-for-good/main/space/settings.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+|  | manage.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/KJWhitehead/space-for-good/main/manage.py) | ![screenshot](documentation/validation/manage.png) | |
+| our_mission | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/KJWhitehead/space-for-good/main/our_mission/admin.py) | ![screenshot](documentation/validation/our-mission-admin.png) | |
+| our_mission | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/KJWhitehead/space-for-good/main/our_mission/models.py) | ![screenshot](documentation/validation/our-mission-models.png) | |
+| our_mission | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/KJWhitehead/space-for-good/main/our_mission/urls.py) | ![screenshot](documentation/validation/our-mission-urls.png) | |
+| our_mission | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/KJWhitehead/space-for-good/main/our_mission/views.py) | ![screenshot](documentation/validation/our-mission-views.png) | |
+| space | settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/KJWhitehead/space-for-good/main/space/settings.py) | ![screenshot](documentation/validation/space-settings.png) | |
 | space | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/KJWhitehead/space-for-good/main/space/urls.py) | ![screenshot](documentation/validation/space-urls.png) | |
 
 ## Browser Compatibility
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this space to discuss testing the live/deployed site on various browsers.
-
-Consider testing at least 3 different browsers, if available on your system.
-
-Recommended browsers to consider:
-- [Chrome](https://www.google.com/chrome)
-- [Firefox (Developer Edition)](https://www.mozilla.org/firefox/developer)
-- [Edge](https://www.microsoft.com/edge)
-- [Safari](https://support.apple.com/downloads/safari)
-- [Brave](https://brave.com/download)
-- [Opera](https://www.opera.com/download)
-
-**IMPORTANT**: You must provide screenshots of the tested browsers, to "prove" that you've actually tested them.
-
-Please note, there are services out there that can test multiple browser compatibilities at the same time.
-Some of these are paid services, but some are free.
-If you use these, you must provide a link to the source used for attribution, and multiple screenshots of the results.
-
-Sample browser testing documentation:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
 | Browser | Home | About | Contact | etc | Notes |
 | --- | --- | --- | --- | --- | --- |
-| Chrome | ![screenshot](documentation/browsers/browser-chrome-home.png) | ![screenshot](documentation/browsers/browser-chrome-about.png) | ![screenshot](documentation/browsers/browser-chrome-contact.png) | ![screenshot](documentation/browsers/browser-chrome-etc.png) | Works as expected |
-| Firefox | ![screenshot](documentation/browsers/browser-firefox-home.png) | ![screenshot](documentation/browsers/browser-firefox-about.png) | ![screenshot](documentation/browsers/browser-firefox-contact.png) | ![screenshot](documentation/browsers/browser-firefox-etc.png) | Works as expected |
-| Edge | ![screenshot](documentation/browsers/browser-edge-home.png) | ![screenshot](documentation/browsers/browser-edge-about.png) | ![screenshot](documentation/browsers/browser-chrome-edge.png) | ![screenshot](documentation/browsers/browser-edge-etc.png) | Works as expected |
-| Safari | ![screenshot](documentation/browsers/browser-safari-home.png) | ![screenshot](documentation/browsers/browser-safari-about.png) | ![screenshot](documentation/browsers/browser-safari-contact.png) | ![screenshot](documentation/browsers/browser-safari-etc.png) | Minor CSS differences |
-| Brave | ![screenshot](documentation/browsers/browser-brave-home.png) | ![screenshot](documentation/browsers/browser-brave-about.png) | ![screenshot](documentation/browsers/browser-brave-contact.png) | ![screenshot](documentation/browsers/browser-brave-etc.png) | Works as expected |
-| Opera | ![screenshot](documentation/browsers/browser-opera-home.png) | ![screenshot](documentation/browsers/browser-opera-about.png) | ![screenshot](documentation/browsers/browser-opera-contact.png) | ![screenshot](documentation/browsers/browser-opera-etc.png) | Minor differences |
-| repeat for any other tested browsers | x | x | x | x | x |
+| Chrome | ![screenshot](documentation/browsers/browser-chrome-home.png) | ![screenshot](documentation/browsers/browser-chrome-about.png) | ![screenshot](documentation/browsers/browser-chrome-contact.png) | ![screenshot](documentation/browsers/browser-chrome-etc.png) | TBCompleted |
+| Firefox | ![screenshot](documentation/browsers/browser-firefox-home.png) | ![screenshot](documentation/browsers/browser-firefox-about.png) | ![screenshot](documentation/browsers/browser-firefox-contact.png) | ![screenshot](documentation/browsers/browser-firefox-etc.png) | TBC |
+| Edge | ![screenshot](documentation/browsers/browser-edge-home.png) | ![screenshot](documentation/browsers/browser-edge-about.png) | ![screenshot](documentation/browsers/browser-chrome-edge.png) | ![screenshot](documentation/browsers/browser-edge-etc.png) | TBC |
+| Safari | ![screenshot](documentation/browsers/browser-safari-home.png) | ![screenshot](documentation/browsers/browser-safari-about.png) | ![screenshot](documentation/browsers/browser-safari-contact.png) | ![screenshot](documentation/browsers/browser-safari-etc.png) | TBC |
+
 
 ## Responsiveness
 
