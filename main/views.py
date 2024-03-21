@@ -8,4 +8,3 @@ from .models import Reservation
 class SpaceList(generic.ListView):
     queryset = Space.objects.all()
     template_name = "main/index.html"
-

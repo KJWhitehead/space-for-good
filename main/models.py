@@ -4,6 +4,7 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 
 # Create your models here.
 
+
 class Space(models.Model):
 
     TYPES = (
@@ -17,10 +18,12 @@ class Space(models.Model):
         validators=[MinValueValidator(1), MaxValueValidator(12)],
         null=False, blank=False
     )
-    space_type = models.CharField(choices=TYPES, max_length=20, null=False, blank=False)
+    space_type = models.CharField(choices=TYPES, max_length=20, null=False,
+                                  blank=False)
 
     def __str__(self):
         return self.name
+
 
 class Reservation(models.Model):
 
@@ -35,8 +38,8 @@ class Reservation(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     space = models.ForeignKey(Space, on_delete=models.CASCADE)
     date = models.DateField(null=False, blank=False)
-    time = models.CharField(choices=TIMES, max_length=20, null=False, blank=False)
+    time = models.CharField(choices=TIMES, max_length=20, null=False,
+                            blank=False)
 
     def __str__(self):
         return self.user.username
-
