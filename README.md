@@ -6,12 +6,6 @@
 
 Run entirely by volunteers for volunteers, Space for Good is a coworking space for charities and those who want to make the world a better place by providing their time to help others without monetary gain. Space for Good offers a variety of coworking environments that can be booked by registered users.
 
-🛑🛑
-Consider adding a mockup image using the "Am I Responsive" website.
-Here's your deployed site as an example:
-https://ui.dev/amiresponsive?url=https://spaceforgood-264af18d8428.herokuapp.com
-🛑🛑 I would but it looks bad in the phone view. 
-
 ![screenshot](documentation/amiresponsive.png)
 
 ## UX
@@ -78,8 +72,6 @@ I used [coolors.co](https://coolors.co/31708e-8fc1e3-f7f9fb) to generate my colo
 - As a site administrator, I should be able to advertise how to volunteer as workers at Space for Good, so that I can maintain the free community space.
 
 ## Wireframes
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 This is so ugly but I don't know how to clean it up.
 
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
@@ -240,17 +232,11 @@ Sign Up
 - [![Heroku](https://img.shields.io/badge/Heroku-grey?logo=heroku&logoColor=430098)](https://www.heroku.com) used for hosting the deployed back-end site.
 - [![Bootstrap](https://img.shields.io/badge/Bootstrap-grey?logo=bootstrap&logoColor=7952B3)](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
 - [![Django](https://img.shields.io/badge/Django-grey?logo=django&logoColor=092E20)](https://www.djangoproject.com) used as the Python framework for the site.
-- [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-grey?logo=postgresql&logoColor=4169E1)](https://www.postgresql.org) used as the relational database management.
-- [![PostgreSQL by Code Institute](https://img.shields.io/badge/PostgreSQL_by_Code_Institute-grey?logo=okta&logoColor=F05223)](https://dbs.ci-dbs.net) used as the Postgres database from Code Institute.
 - [![ElephantSQL](https://img.shields.io/badge/ElephantSQL-grey?logo=postgresql&logoColor=36A6E2)](https://www.elephantsql.com) used as the Postgres database.
 - [![WhiteNoise](https://img.shields.io/badge/WhiteNoise-grey?logo=python&logoColor=FFFFFF)](https://whitenoise.readthedocs.io) used for serving static files with Heroku.
 - [![Balsamiq](https://img.shields.io/badge/Balsamiq-grey?logo=barmenia&logoColor=CE0908)](https://balsamiq.com/wireframes) used for creating wireframes.
-- [![Canva](https://img.shields.io/badge/Canva-grey?logo=canva&logoColor=00C4CC)](https://www.canva.com/p/canvawireframes) used for creating wireframes.
+- [![Canva](https://img.shields.io/badge/Canva-grey?logo=canva&logoColor=00C4CC)](https://www.canva.com/p/canvawireframes) used for creating the logo.
 - [![Font Awesome](https://img.shields.io/badge/Font_Awesome-grey?logo=fontawesome&logoColor=528DD7)](https://fontawesome.com) used for the icons.
-🛑🛑🛑🛑Crispy Forms?
-🛑🛑🛑🛑SummerNote?
-🛑🛑🛑🛑That database builder?
-
 
 ## Database Design
 
