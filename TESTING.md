@@ -61,12 +61,11 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
-| Browser | Home | About | Contact | etc | Notes |
-| --- | --- | --- | --- | --- | --- |
-| Chrome | ![screenshot](documentation/browsers/browser-chrome-home.png) | ![screenshot](documentation/browsers/browser-chrome-about.png) | ![screenshot](documentation/browsers/browser-chrome-contact.png) | ![screenshot](documentation/browsers/browser-chrome-etc.png) | TBCompleted |
-| Firefox | ![screenshot](documentation/browsers/browser-firefox-home.png) | ![screenshot](documentation/browsers/browser-firefox-about.png) | ![screenshot](documentation/browsers/browser-firefox-contact.png) | ![screenshot](documentation/browsers/browser-firefox-etc.png) | TBC |
-| Edge | ![screenshot](documentation/browsers/browser-edge-home.png) | ![screenshot](documentation/browsers/browser-edge-about.png) | ![screenshot](documentation/browsers/browser-chrome-edge.png) | ![screenshot](documentation/browsers/browser-edge-etc.png) | TBC |
-| Safari | ![screenshot](documentation/browsers/browser-safari-home.png) | ![screenshot](documentation/browsers/browser-safari-about.png) | ![screenshot](documentation/browsers/browser-safari-contact.png) | ![screenshot](documentation/browsers/browser-safari-etc.png) | Phone number in footer is in blue on Safari on iPhone |
+| Browser | Home | Our Mission | Facilities | Bookings | Edit Booking | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| Chrome | ![screenshot](documentation/browsers/browser-chrome-home.png) | ![screenshot](documentation/browsers/browser-chrome-our-mission.png) | ![screenshot](documentation/browsers/browser-chrome-facilities.png) | ![screenshot](documentation/browsers/browser-chrome-bookings.png) |  ![screenshot](documentation/browsers/browser-chrome-edit-booking.png) | Displayed as expected |
+| Firefox | ![screenshot](documentation/browsers/browser-firefox-home.png) | ![screenshot](documentation/browsers/browser-firefox-our-mission.png) | ![screenshot](documentation/browsers/browser-firefox-facilities.png) | ![screenshot](documentation/browsers/browser-firefox-bookings.png) |  ![screenshot](documentation/browsers/browser-firefox-edit-booking.png) | Displayed as expected |
+| Safari | ![screenshot](documentation/browsers/browser-safari-home.png) ![screenshot](documentation/browsers/browser-safari-home-iphone.PNG)| ![screenshot](documentation/browsers/browser-safari-our-mission.png) | ![screenshot](documentation/browsers/browser-safari-facilities.png) |  ![screenshot](documentation/browsers/browser-safari-bookings.png) |  ![screenshot](documentation/browsers/browser-safari-edit-booking.png) | |Phone number in footer is in blue on Safari on iPhone |
 
 ## Responsiveness
 
@@ -169,7 +168,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | User Story | Screenshot |
 | --- | --- |
 | As a new site user, I would like to view the NavBar on every page, so that I can quickly navigate the site. | ![screenshot](documentation/userstory/userstory01.png) |
-| As a new site user, I would like to register an account, so that I can make bookings. | ![screenshot](documentation/features/userstory02.png) |
+| As a new site user, I would like to register an account, so that I can make bookings. | ![screenshot](documentation/userstory/userstory02.png) |
 | As a new site user, I would like to to know when I can use the workspaces, so that I can volunteer in the evenings and weekends. | ![screenshot](documentation/userstory/userstory03.png) |
 | As a new site user, I would like to see what is available in coworking space, so that I can make an informed decision before signing up. | ![screenshot](documentation/userstory/userstory04.png) |
 | As a new site user, I would like to to know the rules of the space (like if guests are permitted), so that I can decide whether to register. | This will be a feature on future sprints. |
