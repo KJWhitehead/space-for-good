@@ -137,7 +137,7 @@ Sign Up
 
 ### Existing Features
 
-- **{{ HEADER AND NAVIGATION }}**
+- HEADER AND NAVIGATION 
 
     - Site branding on left for brand recognition
     - Nav bar provides links to pages and indicates current page for ease of use
@@ -145,7 +145,7 @@ Sign Up
 
 ![screenshot](documentation/features/feature01.png)
 
-- **{{ FOOTER }}**
+- FOOTER 
 
     - Address and phone number of Space for Good for contacting
     - Social media links for additional information about the space
@@ -153,59 +153,59 @@ Sign Up
 
 ![screenshot](documentation/features/feature02.png)
 
-- **{{ HOME SCREEN }}**
+- HOME SCREEN 
 
     - Provides a visual representation of the spaces offered for the potential client
 
 ![screenshot](documentation/features/feature03.png)
 
-- **{{ OUR MISSION PAGE }}**
+- OUR MISSION PAGE 
     - Provides a brief description of the mission of Space for Good
     - Provides a brief description of the spaces available
     - Provides a map with the location of the organization
 
 ![screenshot](documentation/features/feature04.png)
 
-- **{{ CREATE AN ACCOUNT }}**
+- CREATE AN ACCOUNT
 
     - Users must create an account to view Facilities
     - This offers a secure way to manage bookings at Space for Good
 
 ![screenshot](documentation/features/feature05.png)
 
-- **{{ LOG IN }}**
+- LOG IN 
 
     - Users may sign in to their individual account
     - Confirmation of success is displayed at top
 
 ![screenshot](documentation/features/feature06.png)
 
-- **{{ FACILITIES PAGE }}**
+- FACILITIES PAGE
 
     - Once logged in, detailed information about the facilities is available
     - Users may also view their existing bookings from a link here
 
 ![screenshot](documentation/features/feature07.png)
 
-- **{{ CREATE A BOOKING }}**
+- CREATE A BOOKING
 
     - Drop-downs of spaces, dates, and times allows the user ease of choices
 
 ![screenshot](documentation/features/feature08.png)
 
-- **{{ SEE MY CURRENT BOOKINGS }}**
+- SEE MY CURRENT BOOKINGS
 
     - Users may view their existing bookings
 
 ![screenshot](documentation/features/feature09.png)
 
-- **{{ EDIT A BOOKING }}**
+- EDIT A BOOKING
 
     - Users may edit their existing bookings if needed
 
 ![screenshot](documentation/features/feature10.png)
 
-- **{{ DELETE A BOOKING }}**
+- DELETE A BOOKING
 
     - Users may delete their existing bookings if needed
 
@@ -213,11 +213,11 @@ Sign Up
 
 ### Future Features
 
-- {{ CALENDAR OF EVENTS }}
+- CALENDAR OF EVENTS
     - A calendar to clearly show the scheduled events that the space will hold.
-- {{ VOLUNTEER FORM }}
+- VOLUNTEER FORM
     - A form prospective volunteers can complete with availability and interests.
-- {{ SPECIAL INTEREST GROUP REGISTRATION }}
+- SPECIAL INTEREST GROUP REGISTRATION
     - The user registration will include special interest groups for better networking.
 
 ## Tools & Technologies Used
@@ -507,13 +507,7 @@ You can fork this repository by using the following steps:
 
 ### Local VS Deployment
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this space to discuss any differences between the local version you've developed, and the live deployment site on Heroku.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-No noticable differences.
+To the best of my knowledge, there are no noticable differences between the local and deployed site.
 
 ## Credits
 
@@ -526,21 +520,17 @@ No noticable differences.
 | [CodeInstitute LMS](https://learn.codeinstitute.net/dashboard) | entire site | foundational understanding of code |
 | [LeafletJS](https://leafletjs.com/) | our mission page | open-source map API |
 | [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) | entire site | responsive HTML/CSS components|
-
-🛑🛑🛑 Specify links for StackOverflow
-
-| Source | Location | Notes |
-| --- | --- | --- |
-| [StackOverflow](https://stackoverflow.com/) | entire site | unstuck on x |
+| [StackOverflow](https://stackoverflow.com/questions/730207/django-model-set-foreign-key-to-a-field-of-another-model) | models | helping to understand keys and models |
+| [StackOverflow](https://stackoverflow.com/questions/11101651/django-forms-having-multiple-models-in-meta-class) | models | helping to understand meta class |
 | [ChatGPT](https://stackoverflow.com/) | entire site | debugging, troubleshooting and explaining code |
 
 ### Media
 
-🛑🛑🛑 Specify images
-
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
-| [Unsplash](https://unsplash.com) | entire site | image | sample of fake spaces |
+| [Unsplash](https://unsplash.com/photos/black-flat-screen-tv-mounted-on-white-wall-zceI0ftblcM?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash) | Facilities pages | image | sample of fake space |
+| [Unsplash](https://unsplash.com/photos/person-typing-on-macbook-pro-on-brown-wooden-table-during-daytime-photo-0QvTyp0gH3A) | Our Mission page | image | simulation of volunteer working at laptop |
+| [Unsplash](https://unsplash.com/photos/brown-wooden-table-with-chairs-VCoh27vHEh0) | Landing page | image | sample of fake space |
 | [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
 
 ### Acknowledgements
