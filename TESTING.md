@@ -121,15 +121,6 @@ Try to access various pages on your site as different user types (User-A, User-B
 
 You should include any manual tests performed, and the expected results/outcome.
 
-Testing should be replicable.
-Ideally, tests cases should focus on each individual section of every page on the website.
-Each test case should be specific, objective, and step-wise replicable.
-
-Instead of adding a general overview saying that everything works fine,
-consider documenting tests on each element of the page
-(ie. button clicks, input box validation, navigation links, etc.) by testing them in their happy flow,
-and also the bad/exception flow, mentioning the expected and observed results,
-and drawing a parallel between them where applicable.
 
 Consider using the following format for manual test cases:
 
@@ -150,45 +141,50 @@ Defensive programming was manually tested with the below user acceptance testing
 | Page | Expectation | Test | Result | Fix | Screenshot |
 | --- | --- | --- | --- | --- | --- |
 | Home | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature01.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature02.png) |
-| About | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature03.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature04.png) |
-| Gallery | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature05.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature06.png) |
+| | Feature is expected to navigate to Our Mission page when the user clicks on Our Mission | Tested the feature by clicking on Our Mission | The feature behaved as expected, and it navigated to Our Mission | Test concluded and passed | ![screenshot](documentation/features/feature01.png) |
+| | Feature is expected to navigate to Facilities page when the user clicks on Facilities | Tested the feature by clicking on Facilities| The feature behaved as expected, and it navigated to Facilities | Test concluded and passed | ![screenshot](documentation/features/feature01.png) |
+| | Feature is expected to navigate to main page when the user clicks on logo | Tested the feature by clicking on logo | The feature behaved as expected, and it navigated to main page | Test concluded and passed | ![screenshot](documentation/features/feature01.png) |
+| | Feature is expected to navigate to main page when the user clicks on Home | Tested the feature by clicking on Home | The feature behaved as expected, and it navigated to main page | Test concluded and passed | ![screenshot](documentation/features/feature01.png) |
+| | Feature is expected to navigate to register when the user clicks on Register | Tested the feature by clicking on Register | The feature behaved as expected, and it navigated to the registration page | Test concluded and passed | ![screenshot](documentation/features/feature01.png) |
+| | Feature is expected to navigate to sign in page when the user clicks on Sign In | Tested the feature by clicking on Sign In | The feature behaved as expected, and it navigated to the sign in page | Test concluded and passed | ![screenshot](documentation/features/feature01.png) |
+| | Feature is expected to provide social media links when the user clicks on icons | Tested the feature by clicking on social media icons | The feature behaved as expected and navigated to the social media sites in new tabs | Test concluded and passed | ![screenshot](documentation/features/feature02.png) |
+| | Feature is expected to provide an image of the space | Tested the feature by viewing page | The feature could be viewed as expected | Test concluded and passed | ![screenshot](documentation/features/feature03.png) |
+| Our Mission | | | | | |
+| | Feature is expected to provide a general description of what is available | Tested the feature by viewing page | The feature could be viewed as expected | Test concluded and passed | ![screenshot](documentation/features/feature04.png) |
+| | Feature is expected to provide a map of the area | Tested the feature by viewing page | The feature could be viewed as expected | Test concluded and passed | ![screenshot](documentation/features/feature04.png) |
+| Facilities | | | | | |
+| | The feature expects users to create an account to view Facilities | Tested the feature by clicking on Facilities while not logged in | The feature behaved as expected, and it directed the user to the Log In page | Test concluded and passed | ![screenshot](documentation/features/feature06.png) |
+| | The feature is expected to provide a specific description of the spaces and nearby amenities | Tested the feature by viewing page | The feature could be viewed as expected | Test concluded and passed | ![screenshot](documentation/features/feature07.png) |
+| | Feature is expected to allow user to make a booking | Tested the feature making a booking for a space at a date and time | The feature made the booking and allowed an alert stating that it was made. | Test concluded and passed | ![screenshot](documentation/features/feature08.png) |
+🛑🛑🛑🛑🛑 I AM THIS FAR.
+| Page | Expectation | Test | Result | Fix | Screenshot |
+| --- | --- | --- | --- | --- | --- |
 | Contact | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature07.png) |
+| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature05.png) |
 | | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature08.png) |
 | repeat for all remaining pages | x | x | x | x | x |
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Repeat for all other tests, as applicable to your own site.
-The aforementioned tests are just an example of a few different project scenarios.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 ## User Story Testing
 
 | User Story | Screenshot |
 | --- | --- |
-| As a new site user, I would like to view the NavBar on every page, so that I can quickly navigate the site. | ![screenshot](documentation/features/feature01.png) |
-| As a new site user, I would like to register an account, so that I can make bookings. | ![screenshot](documentation/features/feature02.png) |
-| As a new site user, I would like to to know when I can use the workspaces, so that I can volunteer in the evenings and weekends. | ![screenshot](documentation/features/feature03.png) |
-| As a new site user, I would like to see what is available in coworking space, so that I can make an informed decision before signing up. | ![screenshot](documentation/features/feature04.png) |
-| As a new site user, I would like to to know the rules of the space (like if guests are permitted), so that I can decide whether to register. | his will be a feature on future sprints. |
-| As a returning site user, I would like to know the location and nearby amenities of the coworking space, so that I can know where to go and what I can eat there. | ![screenshot](documentation/features/feature06.png) |
-| As a returning site user, I would like to easily book a workspace for a specific date and time through an intuitive online platform, so that I can plan my work schedule efficiently. | ![screenshot](documentation/features/feature07.png) |
-| As a returning site user, I would like contact information, so that I can reach out to the coworking space with specific demands. | ![screenshot](documentation/features/feature08.png) |
-| As a returning site user, I would like to see a calendar of upcoming networking events, workshops, and professional development opportunities hosted by the coworking space, so that I can stay engaged and connected with other charities. | his will be a feature on future sprints. |
-| As a returning site user, I would like to see a member directory, so that I can connect with others. | his will be a feature on future sprints. |
-| As a site administrator, I should be able to use recognizable branding, so that our brand is clear to users. | ![screenshot](documentation/features/feature09.png) |
-| As a site administrator, I want users to be able to log in and out with notifications, so that they are aware of their status. | ![screenshot](documentation/features/feature09.png) |
+| As a new site user, I would like to view the NavBar on every page, so that I can quickly navigate the site. | ![screenshot](documentation/userstory/userstory01.png) |
+| As a new site user, I would like to register an account, so that I can make bookings. | ![screenshot](documentation/features/userstory02.png) |
+| As a new site user, I would like to to know when I can use the workspaces, so that I can volunteer in the evenings and weekends. | ![screenshot](documentation/userstory/userstory03.png) |
+| As a new site user, I would like to see what is available in coworking space, so that I can make an informed decision before signing up. | ![screenshot](documentation/userstory/userstory04.png) |
+| As a new site user, I would like to to know the rules of the space (like if guests are permitted), so that I can decide whether to register. | This will be a feature on future sprints. |
+| As a returning site user, I would like to know the location and nearby amenities of the coworking space, so that I can know where to go and what I can eat there. | ![screenshot](documentation/userstory/userstory05.png) |
+| As a returning site user, I would like to easily book a workspace for a specific date and time through an intuitive online platform, so that I can plan my work schedule efficiently. | ![screenshot](documentation/userstory/userstory06.png) |
+| As a returning site user, I would like contact information, so that I can reach out to the coworking space with specific demands. | ![screenshot](documentation/userstory/userstory07.png) |
+| As a returning site user, I would like to see a calendar of upcoming networking events, workshops, and professional development opportunities hosted by the coworking space, so that I can stay engaged and connected with other charities. | This will be a feature on future sprints. |
+| As a returning site user, I would like to see a member directory, so that I can connect with others. | This will be a feature on future sprints. |
+| As a site administrator, I should be able to use recognizable branding, so that our brand is clear to users. | ![screenshot](documentation/userstory/userstory08.png) |
+| As a site administrator, I want users to be able to log in and out with notifications, so that they are aware of their status. | ![screenshot](documentation/userstory/userstory09a.png)  ![screenshot](documentation/userstory/userstory09b.png) |
 | As a site administrator, I should be able to advertise how to volunteer as workers at Space for Good, so that I can maintain the free community space. | This will be a feature on future sprints. |
 
 ## Automated Testing
+
+🛑🛑🛑🛑🛑🛑This is very difficult for me.  Our facilitator said that automated tests weren't required, so I'm hoping I can skip...... 🛑🛑🛑🛑🛑🛑
 
 I have conducted a series of automated tests on my application.
 
