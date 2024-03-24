@@ -27,7 +27,3 @@ for (let button of deleteButtons) {
             });
     });
 }
-
-if (typeof module !== "undefined") module.exports = {
-    deleteButtons
-};
